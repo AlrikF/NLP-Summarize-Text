@@ -1,0 +1,77 @@
+[2023-09-08 17:31:22,229: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 17:31:22,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 17:31:22,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 17:31:22,327: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\utils\common.py", line 30, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:/NLP/NLP-Summarize-Text/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\config\configuration.py", line 17, in __init__
+    self.params = read_yaml(params_filepath)
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\utils\common.py", line 32, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2023-09-08 17:32:57,171: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 17:32:57,175: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 17:32:57,176: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 17:32:57,186: INFO: common: created directory at: artifacts]
+[2023-09-08 17:32:57,187: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 17:32:57,188: ERROR: main: expected string or bytes-like object]
+Traceback (most recent call last):
+  File "d:/NLP/NLP-Summarize-Text/main.py", line 10, in <module>
+    data_ingestion.main()
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.download_file()
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\components\data_ingestion.py", line 18, in download_file
+    filename, headers = request.urlretrieve(
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\urllib\request.py", line 245, in urlretrieve
+    url_type, path = _splittype(url)
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\urllib\parse.py", line 1030, in _splittype
+    match = _typeprog.match(url)
+TypeError: expected string or bytes-like object
+[2023-09-08 17:35:10,106: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-08 17:35:10,111: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-08 17:35:10,112: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-08 17:35:10,112: INFO: common: created directory at: artifacts]
+[2023-09-08 17:35:10,113: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-08 17:35:11,488: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 117A:6CFA:ABE11C:CC6459:64FBBDBB
+Accept-Ranges: bytes
+Date: Sat, 09 Sep 2023 00:35:11 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bur-kbur8200097-BUR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1694219711.106095,VS0,VE299
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0c6cf0a970eded75c53f4ca4cf2b022a49326fb0
+Expires: Sat, 09 Sep 2023 00:40:11 GMT
+Source-Age: 0
+
+]
+[2023-09-08 17:35:11,769: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
