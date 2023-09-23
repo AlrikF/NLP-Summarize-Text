@@ -101,3 +101,81 @@ x==========x]
 [2023-09-21 13:08:06,908: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-09-22 12:06:04,734: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-22 12:13:46,896: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-22 12:14:09,841: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-22 12:14:11,496: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-22 12:14:11,517: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:14:11,550: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:14:11,552: INFO: common: created directory at: artifacts]
+[2023-09-22 12:14:11,552: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-22 12:14:11,552: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-09-22 12:14:11,859: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-22 12:14:11,859: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-22 12:14:11,868: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:14:11,870: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:14:11,871: INFO: common: created directory at: artifacts]
+[2023-09-22 12:14:11,871: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-22 12:14:11,873: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-22 12:14:11,874: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-22 12:14:11,884: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:14:11,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:14:11,887: INFO: common: created directory at: artifacts]
+[2023-09-22 12:14:11,888: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-22 12:14:14,339: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "d:/NLP/NLP-Summarize-Text/main.py", line 33, in <module>
+    data_transformation.main()
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 11, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+  File "d:\NLP\NLP-Summarize-Text\src\textSummarizer\components\data_transformation.py", line 12, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(config.tokenizer_name)
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 637, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\transformers\tokenization_utils_base.py", line 1777, in from_pretrained
+    return cls._from_pretrained(
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\transformers\tokenization_utils_base.py", line 1932, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\transformers\models\pegasus\tokenization_pegasus_fast.py", line 142, in __init__
+    super().__init__(
+  File "D:\AnacondaProjects\envs\Deep_Learning_38\lib\site-packages\transformers\tokenization_utils_fast.py", line 120, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2023-09-22 12:51:01,833: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-22 12:51:25,616: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-22 12:51:25,654: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:51:25,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:51:25,672: INFO: common: created directory at: artifacts]
+[2023-09-22 12:51:25,674: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-22 12:51:25,678: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-09-22 12:51:26,171: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-22 12:51:26,172: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-22 12:51:26,185: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:51:26,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:51:26,187: INFO: common: created directory at: artifacts]
+[2023-09-22 12:51:26,188: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-22 12:51:26,192: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-22 12:51:26,193: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-22 12:51:26,209: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-22 12:51:26,211: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-22 12:51:26,212: INFO: common: created directory at: artifacts]
+[2023-09-22 12:51:26,214: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-22 12:51:41,163: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
