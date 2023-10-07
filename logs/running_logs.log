@@ -179,3 +179,155 @@ x==========x]
 [2023-09-22 12:51:41,163: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2023-09-28 12:39:35,881: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 12:41:00,974: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 12:48:13,973: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 12:50:12,910: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 12:53:10,085: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 12:53:11,520: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-28 12:53:11,572: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 12:53:11,635: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 12:53:11,643: INFO: common: created directory at: artifacts]
+[2023-09-28 12:53:11,644: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-28 12:53:14,973: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 15B2:0326:5E293D:7205A6:6515D9A5
+Accept-Ranges: bytes
+Date: Thu, 28 Sep 2023 19:53:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bur-kbur8200054-BUR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1695930792.380685,VS0,VE1938
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 27faf719ef76677cf566fee55d548d1d184645d8
+Expires: Thu, 28 Sep 2023 19:58:14 GMT
+Source-Age: 2
+
+]
+[2023-09-28 12:53:15,139: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-28 12:53:15,140: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-28 12:53:15,144: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 12:53:15,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 12:53:15,147: INFO: common: created directory at: artifacts]
+[2023-09-28 12:53:15,148: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-28 12:53:15,150: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 12:53:15,151: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-28 12:53:15,161: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 12:53:15,165: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 12:53:15,166: INFO: common: created directory at: artifacts]
+[2023-09-28 12:53:15,167: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-28 12:53:22,838: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 12:55:14,218: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 13:01:54,905: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 13:02:04,011: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-28 13:02:04,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:02:04,073: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:02:04,083: INFO: common: created directory at: artifacts]
+[2023-09-28 13:02:04,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-28 13:02:04,087: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-09-28 13:02:04,265: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:02:04,266: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-28 13:02:04,275: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:02:04,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:02:04,279: INFO: common: created directory at: artifacts]
+[2023-09-28 13:02:04,280: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-28 13:02:04,282: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:02:04,283: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-28 13:02:04,293: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:02:04,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:02:04,303: INFO: common: created directory at: artifacts]
+[2023-09-28 13:02:04,304: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-28 13:02:07,201: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/train\cache-0cc0f255bad7f608.arrow]
+[2023-09-28 13:02:08,211: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/validation\cache-7499891abfa422fb.arrow]
+[2023-09-28 13:02:08,335: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:06:29,125: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 13:06:30,736: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-28 13:06:30,742: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:06:30,746: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:06:30,747: INFO: common: created directory at: artifacts]
+[2023-09-28 13:06:30,747: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-28 13:06:30,748: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-09-28 13:06:30,877: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:06:30,878: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-28 13:06:30,893: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:06:30,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:06:30,897: INFO: common: created directory at: artifacts]
+[2023-09-28 13:06:30,898: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-28 13:06:30,901: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:06:30,902: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-28 13:06:30,910: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:06:30,914: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:06:30,915: INFO: common: created directory at: artifacts]
+[2023-09-28 13:06:30,915: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-28 13:06:33,100: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/train\cache-0cc0f255bad7f608.arrow]
+[2023-09-28 13:06:33,126: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/test\cache-e51af59ab391f6b0.arrow]
+[2023-09-28 13:06:33,488: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:07:13,827: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 13:07:15,397: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-09-28 13:07:15,406: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:07:15,409: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:07:15,410: INFO: common: created directory at: artifacts]
+[2023-09-28 13:07:15,411: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-09-28 13:07:15,411: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-09-28 13:07:15,535: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:07:15,536: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-09-28 13:07:15,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:07:15,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:07:15,549: INFO: common: created directory at: artifacts]
+[2023-09-28 13:07:15,550: INFO: common: created directory at: artifacts/data_validation]
+[2023-09-28 13:07:15,552: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:07:15,554: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-09-28 13:07:15,563: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-09-28 13:07:15,567: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-09-28 13:07:15,570: INFO: common: created directory at: artifacts]
+[2023-09-28 13:07:15,571: INFO: common: created directory at: artifacts/data_transformation]
+[2023-09-28 13:07:17,790: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/train\cache-0cc0f255bad7f608.arrow]
+[2023-09-28 13:07:17,824: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/test\cache-e51af59ab391f6b0.arrow]
+[2023-09-28 13:07:17,860: WARNING: arrow_dataset: Loading cached processed dataset at artifacts/data_ingestion/samsum_dataset/validation\cache-43419a8b517d5825.arrow]
+[2023-09-28 13:07:17,973: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-09-28 13:07:17,974: INFO: main: *******************]
+[2023-09-28 13:07:17,974: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-09-28 13:09:02,978: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-09-28 13:11:12,560: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-02 20:14:06,501: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-02 20:14:44,587: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-02 20:14:57,603: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-07 11:50:52,740: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-07 11:56:16,322: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-10-07 11:57:12,382: INFO: utils: NumExpr defaulting to 8 threads.]
