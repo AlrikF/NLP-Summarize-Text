@@ -331,3 +331,94 @@ x==========x]
 [2023-10-07 11:50:52,740: INFO: utils: NumExpr defaulting to 8 threads.]
 [2023-10-07 11:56:16,322: INFO: utils: NumExpr defaulting to 8 threads.]
 [2023-10-07 11:57:12,382: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-12-24 13:20:57,350: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-12-24 13:20:57,350: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-12-25 08:36:22,302: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-12-25 08:36:22,303: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-12-25 08:53:30,330: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-12-25 08:53:30,333: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-12-25 08:53:32,352: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-25 08:53:32,362: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 08:53:32,364: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 08:53:32,373: INFO: common: created directory at: artifacts]
+[2023-12-25 08:53:32,373: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-25 08:53:32,374: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-12-25 08:53:32,480: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-25 08:53:32,480: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-12-25 08:53:32,480: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 08:53:32,480: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 08:53:32,480: INFO: common: created directory at: artifacts]
+[2023-12-25 08:53:32,480: INFO: common: created directory at: artifacts/data_validation]
+[2023-12-25 08:53:32,480: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-12-25 08:53:32,480: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-12-25 08:53:32,490: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 08:53:32,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 08:53:32,492: INFO: common: created directory at: artifacts]
+[2023-12-25 08:53:32,492: INFO: common: created directory at: artifacts/data_transformation]
+[2023-12-25 08:53:37,975: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-12-25 08:53:37,976: INFO: main: *******************]
+[2023-12-25 08:53:37,976: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-12-25 08:53:37,978: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 08:53:37,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 08:53:37,978: INFO: common: created directory at: artifacts]
+[2023-12-25 08:53:37,978: INFO: common: created directory at: artifacts/model_trainer]
+[2023-12-25 08:57:33,824: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\main.py", line 45, in <module>
+    model_trainer.main()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 16, in main
+    model_trainer_config.train()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\components\model_trainer.py", line 37, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 112, in __init__
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\training_args.py", line 1372, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\training_args.py", line 1795, in device
+    return self._setup_devices
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\utils\generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\training_args.py", line 1716, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2023-12-25 09:11:32,201: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2023-12-25 09:11:32,201: INFO: utils: NumExpr defaulting to 8 threads.]
+[2023-12-25 09:11:35,082: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-25 09:11:35,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 09:11:35,082: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 09:11:35,082: INFO: common: created directory at: artifacts]
+[2023-12-25 09:11:35,098: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-25 09:11:35,098: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2023-12-25 09:11:35,183: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-25 09:11:35,183: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-12-25 09:11:35,183: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 09:11:35,183: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 09:11:35,183: INFO: common: created directory at: artifacts]
+[2023-12-25 09:11:35,183: INFO: common: created directory at: artifacts/data_validation]
+[2023-12-25 09:11:35,183: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2023-12-25 09:11:35,183: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-12-25 09:11:35,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 09:11:35,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 09:11:35,195: INFO: common: created directory at: artifacts]
+[2023-12-25 09:11:35,195: INFO: common: created directory at: artifacts/data_transformation]
+[2023-12-25 09:11:36,535: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-12-25 09:11:36,535: INFO: main: *******************]
+[2023-12-25 09:11:36,535: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2023-12-25 09:11:36,535: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-12-25 09:11:36,535: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-25 09:11:36,535: INFO: common: created directory at: artifacts]
+[2023-12-25 09:11:36,535: INFO: common: created directory at: artifacts/model_trainer]
+[2023-12-25 15:10:56,753: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
