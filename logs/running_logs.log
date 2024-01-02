@@ -422,3 +422,189 @@ x==========x]
 [2023-12-25 15:10:56,753: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
 
 x==========x]
+[2024-01-02 11:49:09,453: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-02 11:49:09,453: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-02 11:49:15,134: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-02 11:49:15,140: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:49:15,153: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:49:15,154: INFO: common: created directory at: artifacts]
+[2024-01-02 11:49:15,155: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-02 11:49:15,156: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-02 11:49:15,279: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:49:15,280: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-02 11:49:15,282: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:49:15,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:49:15,284: INFO: common: created directory at: artifacts]
+[2024-01-02 11:49:15,285: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-02 11:49:15,287: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:49:15,288: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-02 11:49:15,292: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:49:15,296: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:49:15,298: INFO: common: created directory at: artifacts]
+[2024-01-02 11:49:15,299: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-02 11:49:17,054: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:49:17,055: INFO: main: *******************]
+[2024-01-02 11:49:17,055: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-02 11:49:17,055: ERROR: main: name 'ModelEvaluationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\main.py", line 55, in <module>
+    model_evaluation = ModelEvaluationTrainingPipeline()
+NameError: name 'ModelEvaluationTrainingPipeline' is not defined
+[2024-01-02 11:50:26,772: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-02 11:50:26,772: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-02 11:50:29,388: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-02 11:50:29,388: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:50:29,388: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:50:29,388: INFO: common: created directory at: artifacts]
+[2024-01-02 11:50:29,388: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-02 11:50:29,388: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-02 11:50:29,477: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:50:29,477: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-02 11:50:29,477: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:50:29,477: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:50:29,477: INFO: common: created directory at: artifacts]
+[2024-01-02 11:50:29,477: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-02 11:50:29,487: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:50:29,489: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-02 11:50:29,492: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:50:29,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:50:29,494: INFO: common: created directory at: artifacts]
+[2024-01-02 11:50:29,496: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-02 11:50:30,479: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 11:50:30,479: INFO: main: *******************]
+[2024-01-02 11:50:30,479: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-02 11:50:30,479: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 11:50:30,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 11:50:30,479: INFO: common: created directory at: artifacts]
+[2024-01-02 11:50:30,479: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-02 11:50:30,492: ERROR: main: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.]
+Traceback (most recent call last):
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\main.py", line 57, in <module>
+    model_evaluation.main()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\components\model_evaluation.py", line 60, in evaluate
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 652, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 496, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\utils\hub.py", line 417, in cached_file
+    resolved_file = hf_hub_download(
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\huggingface_hub\utils\_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\huggingface_hub\utils\_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2024-01-02 13:23:03,382: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-02 13:23:03,382: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-02 13:23:06,001: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-02 13:23:06,028: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:23:06,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:23:06,031: INFO: common: created directory at: artifacts]
+[2024-01-02 13:23:06,031: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-02 13:23:06,032: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-02 13:23:06,165: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:23:06,165: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-02 13:23:06,165: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:23:06,165: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:23:06,165: INFO: common: created directory at: artifacts]
+[2024-01-02 13:23:06,165: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-02 13:23:06,165: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:23:06,165: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-02 13:23:06,179: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:23:06,180: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:23:06,180: INFO: common: created directory at: artifacts]
+[2024-01-02 13:23:06,181: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-02 13:23:07,371: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:23:07,373: INFO: main: *******************]
+[2024-01-02 13:23:07,373: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-02 13:23:07,376: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:23:07,376: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:23:07,376: INFO: common: created directory at: artifacts]
+[2024-01-02 13:23:07,376: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-02 13:23:07,563: ERROR: main: Can't load the configuration of 'artifacts/model_trainer/pegasus-samsum-model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'artifacts/model_trainer/pegasus-samsum-model' is the correct path to a directory containing a config.json file]
+Traceback (most recent call last):
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\configuration_utils.py", line 672, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\utils\hub.py", line 417, in cached_file
+    resolved_file = hf_hub_download(
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\huggingface_hub\utils\_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\huggingface_hub\utils\_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-samsum-model'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\main.py", line 57, in <module>
+    model_evaluation.main()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+  File "c:\Users\alrik\Git Repositories\Text-Summarization-From-Speech\src\textSummarizer\components\model_evaluation.py", line 61, in evaluate
+    model_pegasus = AutoModelForSeq2SeqLM.from_pretrained(self.config.model_path).to(device)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\models\auto\auto_factory.py", line 461, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\models\auto\configuration_auto.py", line 983, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\configuration_utils.py", line 617, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\alrik\anaconda3\envs\Deep_Learning_39\lib\site-packages\transformers\configuration_utils.py", line 693, in _get_config_dict
+    raise EnvironmentError(
+OSError: Can't load the configuration of 'artifacts/model_trainer/pegasus-samsum-model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'artifacts/model_trainer/pegasus-samsum-model' is the correct path to a directory containing a config.json file
+[2024-01-02 13:24:27,996: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-02 13:24:27,996: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-02 13:24:30,681: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-02 13:24:30,681: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:24:30,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:24:30,692: INFO: common: created directory at: artifacts]
+[2024-01-02 13:24:30,693: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-02 13:24:30,693: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-02 13:24:30,793: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:24:30,793: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-02 13:24:30,809: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:24:30,809: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:24:30,809: INFO: common: created directory at: artifacts]
+[2024-01-02 13:24:30,809: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-02 13:24:30,814: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:24:30,815: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-02 13:24:30,818: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:24:30,819: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:24:30,820: INFO: common: created directory at: artifacts]
+[2024-01-02 13:24:30,821: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-02 13:24:31,828: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-02 13:24:31,828: INFO: main: *******************]
+[2024-01-02 13:24:31,828: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-02 13:24:31,828: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-02 13:24:31,828: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-02 13:24:31,828: INFO: common: created directory at: artifacts]
+[2024-01-02 13:24:31,828: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-02 13:24:51,402: INFO: rouge_scorer: Using default tokenizer.]
+[2024-01-02 13:24:51,497: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
