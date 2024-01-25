@@ -608,3 +608,52 @@ x==========x]
 [2024-01-02 13:24:51,497: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-01-05 21:23:29,703: INFO: server: Started server process [20792]]
+[2024-01-05 21:23:29,703: INFO: on: Waiting for application startup.]
+[2024-01-05 21:23:29,703: INFO: on: Application startup complete.]
+[2024-01-05 21:23:29,703: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-01-25 10:32:54,613: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-01-25 10:32:54,619: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-25 10:32:59,643: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-25 10:32:59,653: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-25 10:32:59,653: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-25 10:32:59,653: INFO: common: created directory at: artifacts]
+[2024-01-25 10:32:59,653: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-25 10:32:59,653: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-25 10:32:59,753: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-25 10:32:59,753: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-25 10:32:59,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-25 10:32:59,753: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-25 10:32:59,753: INFO: common: created directory at: artifacts]
+[2024-01-25 10:32:59,753: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-25 10:32:59,763: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-25 10:32:59,764: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-25 10:32:59,766: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-25 10:32:59,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-25 10:32:59,768: INFO: common: created directory at: artifacts]
+[2024-01-25 10:32:59,768: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-25 10:33:00,764: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-25 10:33:00,764: INFO: main: *******************]
+[2024-01-25 10:33:00,764: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-25 10:33:00,764: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-25 10:33:00,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-25 10:33:00,769: INFO: common: created directory at: artifacts]
+[2024-01-25 10:33:00,769: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-25 10:33:18,735: INFO: rouge_scorer: Using default tokenizer.]
+[2024-01-25 10:33:18,823: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-01-25 11:17:05,893: INFO: server: Started server process [2208]]
+[2024-01-25 11:17:05,894: INFO: on: Waiting for application startup.]
+[2024-01-25 11:17:05,894: INFO: on: Application startup complete.]
+[2024-01-25 11:17:05,895: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-01-25 11:22:27,296: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-25 11:22:27,296: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-25 11:22:27,296: INFO: common: created directory at: artifacts]
+[2024-01-25 11:22:27,296: INFO: common: created directory at: artifacts/model_evaluation]
